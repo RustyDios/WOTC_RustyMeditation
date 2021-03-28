@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Guid>649331cb-a1de-4dcc-ba25-58f36e7a4f0a</Guid>
+    <Name>WOTC_RustyMeditation</Name>
+    <Description>This mod pulls Altered-Rushano's 'Meditation' ability from his Caster Gauntlets and put's them on the normal gauntlets.
+
+https://steamcommunity.com/sharedfiles/filedetails/?id=2024073766
+
+This mod negates the clash to Supreme Focus;
+https://steamcommunity.com/sharedfiles/filedetails/?id=1445339034</Description>
+    <SteamPublishID>0</SteamPublishID>
+    <AssemblyName>WOTC_RustyMeditation</AssemblyName>
+    <RootNamespace>WOTC_RustyMeditation</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config\" />
+    <Folder Include="Localization\" />
+    <Folder Include="Content" />
+    <Folder Include="Src\" />
+    <Folder Include="Src\WOTC_RustyMeditation\" />
+    <Folder Include="Src\WOTC_RustyMeditation\Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\XComClassData_Optional.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Config\XComRustyMeditationConfig.ini">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Content\RustyMeditationIcon.upk">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ReadMe.txt" />
+    <Content Include="ModPreview.jpg" />
+    <Content Include="Config\XComEditor.ini" />
+    <Content Include="Config\XComEngine.ini" />
+    <Content Include="Config\XComGame.ini" />
+    <Content Include="Localization\XComGame.int" />
+    <Content Include="Src\WOTC_RustyMeditation\Classes\X2Ability_TemplarMeditation.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_RustyMeditation\Classes\X2Condition_CheckCurrentFocusLevel.uc">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Src\WOTC_RustyMeditation\Classes\X2DownloadableContentInfo_WOTC_RustyMeditation.uc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildLocalExtensionPath)\XCOM2.targets" />
+</Project>
